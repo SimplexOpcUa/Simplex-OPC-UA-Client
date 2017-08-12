@@ -1,0 +1,72 @@
+object frmCallSettings: TfrmCallSettings
+  Left = 0
+  Top = 0
+  BorderStyle = ToolWindow
+  Caption = 'Call settings'
+  ClientHeight = 211
+  ClientWidth = 343
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object gbxCallSettigs: TGroupBox
+    Align = Top
+    Size.Width = 343.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object sgCallSettings: TStringGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 343.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'gridstyle'
+      TabOrder = 0
+      RowHeight = 21.000000000000000000
+      RowCount = 1
+      Viewport.Width = 339.000000000000000000
+      Viewport.Height = 88.000000000000000000
+      object sclName: TStringColumn
+        Header = 'Name'
+        ReadOnly = True
+        Size.Width = 80.000000000000000000
+      end
+      object sclValue: TStringColumn
+        Header = 'Value'
+        Size.Width = 80.000000000000000000
+      end
+      object sclType: TStringColumn
+        Header = 'Type'
+        ReadOnly = True
+        Size.Width = 80.000000000000000000
+      end
+      object sclDescription: TStringColumn
+        Header = 'Description'
+        ReadOnly = True
+        Size.Width = 101.000000000000000000
+      end
+    end
+  end
+  object btnCancel: TButton
+    ModalResult = 2
+    Position.X = 184.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Cancel'
+  end
+  object btnOK: TButton
+    ModalResult = 1
+    Position.X = 80.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'OK'
+  end
+end

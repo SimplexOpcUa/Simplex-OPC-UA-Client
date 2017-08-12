@@ -1,0 +1,293 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup>
+        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSSimulator'"/>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="Win32\Debug\SimplexOpcUaClientFMX.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>SimplexOpcUaClientFMX.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\soaprtl250.ja" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>soaprtl250.ja</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\inet250.de" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>inet250.de</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\xmlrtl250.fr" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>xmlrtl250.fr</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\dbrtl250.fr" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>dbrtl250.fr</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\rtl250.ja" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>rtl250.ja</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\xmlrtl250.de" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>xmlrtl250.de</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\soaprtl250.fr" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>soaprtl250.fr</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\dbrtl250.ja" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>dbrtl250.ja</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\xmlrtl250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>xmlrtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\rtl250.de" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>rtl250.de</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\inet250.fr" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>inet250.fr</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\IndyCore250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>IndyCore250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\rtl250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>rtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\IndySystem250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>IndySystem250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\soaprtl250.de" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>soaprtl250.de</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\rtl250.fr" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>rtl250.fr</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\dbrtl250.de" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>dbrtl250.de</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\inet250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>inet250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\IndyProtocols250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>IndyProtocols250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\dbrtl250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>dbrtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\soaprtl250.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>soaprtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\inet250.ja" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>inet250.ja</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win32\xmlrtl250.ja" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>xmlrtl250.ja</RemoteName>
+            <DeployClass>DependencyPackageResource</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="SimplexOpcUa.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>SimplexOpcUaClientFMX\</RemoteDir>
+            <RemoteName>SimplexOpcUa.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
+            <RemoteDir>SimplexOpcUaClientFMX.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgsqlite3.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>SimplexOpcUaClientFMX.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>SimplexOpcUaClientFMX.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>SimplexOpcUaClientFMX.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

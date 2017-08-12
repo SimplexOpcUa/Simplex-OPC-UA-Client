@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.714,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Client.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.945,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.285,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.204,D:\Work\SimplexOpcUa\SimplexOpcUaClient\SimplexOpcUaClientFMX\SimplexOpcUaClientVCL.dproj=D:\Work\SimplexOpcUa\SimplexOpcUaClient\SimplexOpcUaClientFMX\SimplexOpcUaClient.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.554,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.003,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.453,D:\Work\SimplexOpcUa\SimplexOpcUaClient\SimplexOpcUaClientFMX\SimplexOpcUaClientFMX.dproj=D:\Work\SimplexOpcUa\SimplexOpcUaClient\SimplexOpcUaClientFMX\SimplexOpcUaClientVCL.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.030,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.683,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.014,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Client.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.380,=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.552,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\HistorySettings.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.060,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\WriteSettings.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.962,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\CallSettings.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.290,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.552,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.fmx=D:\Work\SimplexOpcUa\SimplexOpcUaClient\HistorySettings.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.060,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.fmx=D:\Work\SimplexOpcUa\SimplexOpcUaClient\WriteSettings.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.437,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Connect.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.962,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.fmx=D:\Work\SimplexOpcUa\SimplexOpcUaClient\CallSettings.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.068,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Connect.fmx=D:\Work\SimplexOpcUa\SimplexOpcUaClient\ConnectSettings.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.437,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Connect.fmx=D:\Work\SimplexOpcUa\SimplexOpcUaClient\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.719,D:\Work\SimplexOpcUa\SimplexOpcClient\SimplexOpcUaClient.dproj=C:\Users\Евгений\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.444,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.758,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.362,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.347,=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.068,D:\Work\SimplexOpcUa\SimplexOpcUaClient\Connect.pas=D:\Work\SimplexOpcUa\SimplexOpcUaClient\ConnectSettings.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.106,D:\Work\SimplexOpcUa\SimplexOpcClient\Main.pas=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.106,D:\Work\SimplexOpcUa\SimplexOpcClient\Main.fmx=C:\Users\Евгений\Documents\RAD Studio\Projects\Unit1.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

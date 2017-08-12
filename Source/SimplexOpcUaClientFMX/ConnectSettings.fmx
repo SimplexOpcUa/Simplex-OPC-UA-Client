@@ -1,0 +1,145 @@
+object frmConnectSettings: TfrmConnectSettings
+  Left = 0
+  Top = 0
+  BorderStyle = ToolWindow
+  Caption = 'Connect settings'
+  ClientHeight = 287
+  ClientWidth = 256
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object gbxConnectSettings: TGroupBox
+    Align = Top
+    Size.Width = 256.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnOK: TButton
+      ModalResult = 1
+      Position.X = 40.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'OK'
+      object btnCancel: TButton
+        ModalResult = 2
+        Position.X = 96.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Cancel'
+      end
+    end
+    object lblSecurityPolicy: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Security policy'
+      TabOrder = 1
+    end
+    object cbxSecurityPolicy: TComboBox
+      ItemIndex = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lbiNone: TListBoxItem
+        IsSelected = True
+        Position.X = 5000.000000000000000000
+        Position.Y = 5000.000000000000000000
+        Size.Width = 192.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'None'
+      end
+      object lbiBasic128Rsa15: TListBoxItem
+        Position.X = 5000.000000000000000000
+        Position.Y = 5000.000000000000000000
+        TabOrder = 1
+        Text = 'Basic128Rsa15'
+      end
+    end
+    object lblAuthentication: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Authentication'
+      TabOrder = 3
+      object cbxAuthentication: TComboBox
+        ItemIndex = 0
+        Position.Y = 16.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnChange = cbxAuthenticationChange
+        object lbiAnonymous: TListBoxItem
+          IsSelected = True
+          Position.X = 5000.000000000000000000
+          Position.Y = 5000.000000000000000000
+          Size.Width = 192.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Anonymous'
+        end
+        object lbiUserName: TListBoxItem
+          Position.Y = 18.000000000000000000
+          TabOrder = 1
+          Text = 'User name'
+        end
+      end
+    end
+    object lblUserName: TLabel
+      Enabled = False
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'User name'
+      TabOrder = 4
+    end
+    object edtUserName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 16.000000000000000000
+      Position.Y = 136.000000000000000000
+      Enabled = False
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblPassword: TLabel
+      Enabled = False
+      Position.X = 16.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Password'
+      TabOrder = 6
+      object edtPassword: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.Y = 16.000000000000000000
+        Enabled = False
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

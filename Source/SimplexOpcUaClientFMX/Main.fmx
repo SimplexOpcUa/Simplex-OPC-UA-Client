@@ -1,0 +1,367 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Simplex OPC UA Client (FMX)'
+  ClientHeight = 526
+  ClientWidth = 892
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object gbxEndpointUrl: TGroupBox
+    Align = Top
+    Size.Width = 892.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Endpoint Url'
+    TabOrder = 0
+    object btnConnect: TButton
+      Position.X = 304.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connect'
+      OnClick = btnConnectClick
+    end
+    object edtEndpointUrl: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = 'opc.tcp://localhost:4848'
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object gbxAddressSpace: TGroupBox
+    Align = Left
+    Enabled = False
+    Position.Y = 57.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 363.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Address space'
+    TabOrder = 1
+    object tvAddressSpace: TTreeView
+      Align = Client
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 15.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 363.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnClick = tvAddressSpaceClick
+      Viewport.Width = 181.000000000000000000
+      Viewport.Height = 359.000000000000000000
+    end
+  end
+  object gbxLog: TGroupBox
+    Align = Bottom
+    ClipChildren = True
+    Position.Y = 425.000000000000000000
+    Size.Width = 892.000000000000000000
+    Size.Height = 101.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Log'
+    TabOrder = 2
+    object mmLog: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      Align = Client
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 15.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Size.Width = 892.000000000000000000
+      Size.Height = 101.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 888.000000000000000000
+      Viewport.Height = 97.000000000000000000
+    end
+  end
+  object btnDisconnect: TButton
+    Enabled = False
+    Position.X = 392.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Diconnect'
+    OnClick = btnDisconnectClick
+  end
+  object tmEvents: TTimer
+    Interval = 100
+    OnTimer = tmEventsTimer
+    Left = 496
+    Top = 16
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 185.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 5.000000000000000000
+    Size.Height = 363.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Splitter2: TSplitter
+    Align = Bottom
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 892.000000000000000000
+    Size.Height = 5.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Splitter3: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 380.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 5.000000000000000000
+    Size.Height = 363.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object pnlAttributes: TPanel
+    Align = Left
+    Position.X = 190.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 190.000000000000000000
+    Size.Height = 363.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object gbxAttributes: TGroupBox
+      Align = Client
+      Enabled = False
+      Size.Width = 190.000000000000000000
+      Size.Height = 240.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Attributes'
+      TabOrder = 0
+      object sgdAttributes: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 15.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 240.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'gridstyle'
+        TabOrder = 0
+        RowHeight = 21.000000000000000000
+        RowCount = 0
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+        Viewport.Width = 186.000000000000000000
+        Viewport.Height = 215.000000000000000000
+        object sclAttribName: TStringColumn
+          Header = 'Attribute'
+          Size.Width = 80.000000000000000000
+        end
+        object sclAttribValue: TStringColumn
+          Header = 'Value'
+          Size.Width = 98.000000000000000000
+        end
+      end
+    end
+    object gbxActions: TGroupBox
+      Align = Bottom
+      Enabled = False
+      Position.Y = 240.000000000000000000
+      Size.Width = 190.000000000000000000
+      Size.Height = 123.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Actions'
+      TabOrder = 1
+      object btnSubscribe: TButton
+        Enabled = False
+        Position.X = 8.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Subscribe'
+        OnClick = btnSubscribeClick
+      end
+      object btnWrite: TButton
+        Enabled = False
+        Position.X = 8.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Write'
+        OnClick = btnWriteClick
+      end
+      object btnCall: TButton
+        Enabled = False
+        Position.X = 96.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Call'
+        OnClick = btnCallClick
+      end
+      object btnReadHistory: TButton
+        Enabled = False
+        Position.X = 8.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Read History'
+        OnClick = btnReadHistoryClick
+      end
+      object btnUnsubscribe: TButton
+        Enabled = False
+        Position.X = 96.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Unsubscribe'
+        OnClick = btnUnsubscribeClick
+      end
+    end
+  end
+  object pcData: TTabControl
+    Align = Client
+    Enabled = False
+    Size.Width = 507.000000000000000000
+    Size.Height = 363.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 20.000000000000000000
+    TabIndex = 0
+    TabOrder = 8
+    TabPosition = Top
+    Sizes = (
+      507s
+      343s
+      507s
+      343s)
+    object tabSubscription: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 92.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Subscription'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      object sgdSubscription: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 507.000000000000000000
+        Size.Height = 343.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'gridstyle'
+        TabOrder = 0
+        RowHeight = 21.000000000000000000
+        RowCount = 0
+        Viewport.Width = 503.000000000000000000
+        Viewport.Height = 318.000000000000000000
+        object sclSubscribeNodeId: TStringColumn
+          Header = 'NodeId'
+          Size.Width = 70.000000000000000000
+        end
+        object sclSubscribeDisplayName: TStringColumn
+          Header = 'Name'
+          Size.Width = 70.000000000000000000
+        end
+        object sclSubscribeValue: TStringColumn
+          Header = 'Value'
+          Size.Width = 110.000000000000000000
+        end
+        object sclSubscribeValueType: TStringColumn
+          Header = 'Type'
+          Size.Width = 70.000000000000000000
+        end
+        object sclSubscribeSourceTime: TStringColumn
+          Header = 'Time'
+          Size.Width = 110.000000000000000000
+        end
+        object sclSubscribeStatusCode: TStringColumn
+          Header = 'Status'
+          Size.Width = 70.000000000000000000
+        end
+      end
+    end
+    object tabHistory: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 63.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'History'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      object sgdHistory: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 507.000000000000000000
+        Size.Height = 343.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'gridstyle'
+        TabOrder = 0
+        RowHeight = 21.000000000000000000
+        RowCount = 0
+        Viewport.Width = 503.000000000000000000
+        Viewport.Height = 318.000000000000000000
+        object sclHistoryNodeId: TStringColumn
+          Header = 'NodeId'
+          Size.Width = 70.000000000000000000
+        end
+        object sclHistoryDisplayName: TStringColumn
+          Header = 'Name'
+          Size.Width = 70.000000000000000000
+        end
+        object sclHistoryValue: TStringColumn
+          Header = 'Value'
+          Size.Width = 110.000000000000000000
+        end
+        object sclHistoryValueType: TStringColumn
+          Header = 'Type'
+          Size.Width = 70.000000000000000000
+        end
+        object sclHistorySourceTime: TStringColumn
+          Header = 'Time'
+          Size.Width = 110.000000000000000000
+        end
+        object sclHistoryStatusCode: TStringColumn
+          Header = 'Status'
+          Size.Width = 70.000000000000000000
+        end
+      end
+    end
+  end
+end

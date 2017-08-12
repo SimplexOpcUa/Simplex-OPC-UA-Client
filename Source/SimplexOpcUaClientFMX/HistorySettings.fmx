@@ -1,0 +1,72 @@
+object frmHistorySettings: TfrmHistorySettings
+  Left = 0
+  Top = 0
+  BorderStyle = ToolWindow
+  Caption = 'History settings'
+  ClientHeight = 200
+  ClientWidth = 200
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object GroupBox1: TGroupBox
+    Align = Top
+    Size.Width = 200.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnOK: TButton
+      ModalResult = 1
+      Position.X = 16.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'OK'
+    end
+    object dteEndTime: TDateEdit
+      Date = 42958.000000000000000000
+      Position.X = 24.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object Label1: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Start time'
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'End time'
+    TabOrder = 4
+  end
+  object dteStartTime: TDateEdit
+    Date = 42958.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object btnCnacel: TButton
+    ModalResult = 2
+    Position.X = 104.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 6
+    Text = 'Cnacel'
+  end
+end
