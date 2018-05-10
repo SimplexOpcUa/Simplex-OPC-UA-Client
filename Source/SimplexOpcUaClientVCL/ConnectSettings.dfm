@@ -73,6 +73,7 @@ object frmConnectSettings: TfrmConnectSettings
       ItemIndex = 0
       TabOrder = 1
       Text = 'Anonymous'
+      OnChange = cbxAuthenticationChange
       Items.Strings = (
         'Anonymous'
         'User name')

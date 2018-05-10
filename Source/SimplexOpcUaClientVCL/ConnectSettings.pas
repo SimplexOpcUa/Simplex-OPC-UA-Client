@@ -19,6 +19,7 @@ type
     edtUserName: TEdit;
     lblPassword: TLabel;
     edtPassword: TEdit;
+    procedure cbxAuthenticationChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,6 +74,14 @@ begin
   finally
     FreeAndNil(frmConnectSettings);
   end;
+end;
+
+procedure TfrmConnectSettings.cbxAuthenticationChange(Sender: TObject);
+begin
+  lblUserName.Enabled := cbxAuthentication.ItemIndex > 0;
+  edtUserName.Enabled := lblUserName.Enabled;
+  lblPassword.Enabled := cbxAuthentication.ItemIndex > 0;
+  edtPassword.Enabled := lblPassword.Enabled;
 end;
 
 end.
